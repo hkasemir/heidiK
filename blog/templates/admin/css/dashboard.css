@@ -1,0 +1,36 @@
+/* DASHBOARD */
+
+.dashboard .module table th {
+    width: 100%;
+    color: red;
+}
+
+.dashboard .module table td {
+    white-space: nowrap;
+    color: red;
+}
+
+.dashboard .module table td a {
+    display: block;
+    padding-right: .6em;
+    color: red;
+}
+
+/* RECENT ACTIONS MODULE */
+
+.module ul.actionlist {
+    margin-left: 0;
+    color: red;
+}
+
+ul.actionlist li {
+    list-style-type: none;
+    color: red;
+}
+
+ul.actionlist li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    color: red;
+}
