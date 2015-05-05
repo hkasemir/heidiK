@@ -1,0 +1,14 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<link rel="icon" href="{% static "icons/favicon.png" %}">
+<link rel="stylesheet" href="{% static "mainpage/css/styles.css" %}">
+<img src="{% static "mainpage/images/DSC_3201.JPG" %}">
+
+<link rel="stylesheet" href="css/styles.css">
+
+<h1>This is the index.</h1>
+
+
+<p><a href="{% url "blog:blog" %}">blog</a></p>

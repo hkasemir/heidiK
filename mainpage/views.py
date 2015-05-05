@@ -1,13 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from . import models
-from django.http import HttpResponse
-from django.template import RequestContext, loader
 
 
 def index(request):
-    template = loader.get_template('index.html')
-    return HttpResponse(template.render())
+    return render(request, 'mainpage/index.html')
 
 def about(request):
-    return HttpResponse("This is my about page")
+    return render(request, 'mainpage/about.html')

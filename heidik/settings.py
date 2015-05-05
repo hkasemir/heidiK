@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'blog',
     'django_markdown',
+    'mainpage',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -57,8 +58,10 @@ ROOT_URLCONF = 'heidik.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "blog/templates"),
-                 os.path.join(BASE_DIR, "mainpage/templates"),],
+        'DIRS': [os.path.join(BASE_DIR, "templates"),
+                 os.path.join(BASE_DIR, "templates/blog"),
+                 os.path.join(BASE_DIR, "templates/mainpage"),
+                 os.path.join(BASE_DIR, "templates/admin"),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
