@@ -1,3 +1,8 @@
 from django.contrib import admin
+from . import models
 
-# Register your models here.
+
+class MainContentAdmin(admin.ModelAdmin):
+    list_display = ("header", "page")
+
+admin.site.register(models.MainContent, MainContentAdmin)

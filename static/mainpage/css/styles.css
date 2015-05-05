@@ -1,6 +1,6 @@
 body {
     background-color: aquamarine;
-    font-family: fantasy;
+    font-family: sans-serif;
 }
 
 h1 {
@@ -8,5 +8,7 @@ h1 {
 }
 
 img {
-    height: 200px;
+    width: 75%;
+    margin-left: 40px;
+
 }

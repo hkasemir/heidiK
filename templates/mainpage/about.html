@@ -1,6 +1,10 @@
-<!--{% extends "index.html" %}-->
-<!--{% load staticfiles %}-->
-<!DOCTYPE html>
+{% extends "main.html" %}
 
 
-<p>this is my about page</p>
+{% block mainContent %}
+  <div class="post">
+    <h1>This is the about page.</h1>
+    <h2> {{ object.header }}</a></h2>
+    <p>{{ object.content }}</p>
+  </div>
+{% endblock %}
