@@ -2,10 +2,12 @@
 
 
 {% block mainContent %}
+{% for obj in content_object_list %}
   <div class="post">
-    <h1>This is the index.</h1>
-    <h2> {{ object.header }}</a></h2>
-    <p>{{ object.content }}</p>
+    <h1>This is the {{obj.page}} page.</h1>
+    <h2>{{ obj.header }}</a></h2>
+    <p>{{ obj.content }}</p>
   </div>
+{% endfor %}
 {% endblock %}
 
