@@ -1,9 +1,8 @@
-{% load staticfiles %}
 <!DOCTYPE html>
-
-<link rel="icon" href="{% static "icons/favicon.png" %}">
+ 
+<link rel="stylesheet" href="styles.css">
 <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="{% static "mainpage/css/styles.css" %}">
+
 
 <div class="links-bar">
     <ul>
@@ -29,18 +28,17 @@
 </header>
 <nav>
     <ul>
-        <li><a href="{% url "index" %}">Home</a></li>
-        <li><a href="{% url "about" %}">About</a></li>
-        <li><a href="{% url "blog:blog" %}">Blog</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
         <li><a href="#">Projects</a></li>
     </ul>
 </nav>
 
 <div class="container">
-
-{% block mainContent %} {% endblock %}
-{% block blog_entries %} {% endblock %}
-
+   
+   <h2>Title 1</h2>
+    here we have the content.
 </div>
 
 <footer>
@@ -61,5 +59,3 @@
 
     </ul>
 </footer>
-
-

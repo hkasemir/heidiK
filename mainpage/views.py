@@ -3,8 +3,16 @@ from django.views import generic
 from . import models
 
 
-def index(request):
-    return render(request, 'mainpage/index.html')
+class IndexView(generic.ListView):
+    template_name = 'mainpage/index.html'
+    context_object_name = 'content_object_list'
+    
+    def get_queryset(self):
+        return models.MainContent.objects.filter(page="index")
 
-def about(request):
-    return render(request, 'mainpage/about.html')
+class AboutView(generic.ListView):
+    template_name = 'mainpage/index.html'
+    context_object_name = 'content_object_list'
+    
+    def get_queryset(self):
+        return models.MainContent.objects.filter(page="about")
