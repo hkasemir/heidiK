@@ -15,15 +15,56 @@ a {
     text-decoration: none;
     color: black;
     margin-top: 10px;
+    transition-property: color;
+    transition-duration: .35s;
+    transition-timing-function: ease-out;
 }
 
 a:hover {
     color: red;
+    transition-property: color;
+    transition-duration: .35s;
+    transition-timing-function: ease-out;
 }
 
 body {
-    background-color: ;
-} 
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 .container {
     width: 75%;
@@ -71,6 +112,7 @@ header {
 .meta {
     font-style: italic;
     padding-bottom: 20px;
+    text-indent: 20px;
 }
 
 nav {
@@ -80,13 +122,13 @@ nav {
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid grey;
-    
+    font-size: 20px;
+    line-height: 1.3;
 }
 
 nav a {
     text-decoration: none;
     color: black;
-    margin-top: 10px;
     
 }
 
@@ -94,13 +136,41 @@ nav li {
     list-style-type: none;
     display: inline;
     padding: 10px;
-    margin-top: 10px;
     text-transform: uppercase;
 }
 
 nav ul {
     height:inherit;
     text-align: center;
+}
+
+.pager {
+    margin-top: 50px;
+    text-align: center;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.pager li {
+    display: inline;
+    padding: 30px;
+}
+
+.pager .disabled a {
+    color: grey;
+}
+
+.pager .disabled a:hover {
+    color: grey;
+}
+
+.post-body a {
+    color: blue;
+}
+
+.post-body a:hover {
+    color: blue;
+    text-decoration: underline;
 }
 
 .social-icons {
