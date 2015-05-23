@@ -157,11 +157,7 @@ nav ul {
 }
 
 .pager .disabled a {
-    color: grey;
-}
-
-.pager .disabled a:hover {
-    color: grey;
+    color: #D1D1D1;
 }
 
 .post p {
