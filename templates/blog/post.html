@@ -10,6 +10,8 @@
       post-category-js" href="{% url 'blog:tag_index' slug=tag.slug %}"> #{{tag}}</a>
       {% endfor %}
     </p>
-    {{ object.body|markdown }}
+    <div class="post-body">
+        {{ object.body|markdown }}
+    </div>
   </div>
 {% endblock %}

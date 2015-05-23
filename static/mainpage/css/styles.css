@@ -16,14 +16,14 @@ a {
     color: black;
     margin-top: 10px;
     transition-property: color;
-    transition-duration: .35s;
+    transition-duration: .25s;
     transition-timing-function: ease-out;
 }
 
 a:hover {
-    color: red;
+    color: fuchsia;
     transition-property: color;
-    transition-duration: .35s;
+    transition-duration: .25s;
     transition-timing-function: ease-out;
 }
 
