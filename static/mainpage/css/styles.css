@@ -72,7 +72,7 @@ body {
     margin: auto;
     padding: 30px;
     position: relative;
-    min-height: 200px;
+    min-height: 250px;
 }
 
 .container p {
@@ -191,7 +191,7 @@ p {
 }
 
 .side-pic {
-    max-width: 20%;
+    max-width: 25%;
     position:absolute;
 }
 
