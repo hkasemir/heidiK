@@ -71,6 +71,8 @@ body {
     width: 75%;
     margin: auto;
     padding: 30px;
+    position: relative;
+    min-height: 200px;
 }
 
 .container p {
@@ -188,9 +190,13 @@ p {
     text-decoration: underline;
 }
 
+.side-pic {
+    max-width: 20%;
+    position:absolute;
+}
+
 .social-icons {
     text-align: center;
-    
 }
 
 .social-icons li {
@@ -202,14 +208,4 @@ p {
 .subtitle {
     font-size: 20px;
     color: grey
-}
-
-    
-    
-
-img {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-
 }

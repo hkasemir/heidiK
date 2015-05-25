@@ -5,7 +5,7 @@
   <div class="post">
     <h2>{{ object.title }}</h2>
     <p class="meta">
-      {{ object.created }} |
+      {{ object.created|date:"D M d, Y" }} |
       tags: {% for tag in object.tags.all %}<a class="post-category
       post-category-js" href="{% url 'blog:tag_index' slug=tag.slug %}"> #{{tag}}</a>
       {% endfor %}
