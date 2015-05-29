@@ -4,7 +4,8 @@
 
 
 {% block mainContent %}
-<img class="side-pic" src="{% static "mainpage/images/DSC_4281.JPG" %}">
+<a href="/static/mainpage/images/Optimized-DSC_4281.JPG">
+  <img class="side-pic" src="{% static "mainpage/images/Optimized-DSC_4281.JPG" %}"></a>
 {% for obj in content_object_list %}
   <div class="post">
     <h2>{{ obj.header }}</a></h2>
