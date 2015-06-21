@@ -25,6 +25,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
 '.heidik.name',
+'.heidik.name.',
 ]
 
 
