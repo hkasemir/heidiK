@@ -1,10 +1,13 @@
-<!doctype html>
-<html>
+{% extends "main.html" %}
+{% load staticfiles %}
+
+{% block mainContent %}
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Tic Tac Toe</title>
-  <script src="tictactoe.js"></script>
-  <link rel="stylesheet" href="tttstyle.css"></link>
+  <script src="{% static "mainpage/js/tictactoe.js" %}"></script>
+  <link rel="stylesheet" href="{% static "mainpage/css/tttstyle.css" %}">
 </head>
 <body>
  <div id='gamecontrols'>
@@ -23,4 +26,5 @@
   </div>
 </body>
 
-</html>
+{% endblock %}
+
